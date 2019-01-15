@@ -1,0 +1,6 @@
+main2:main2.o
+	gcc main2.o -o main2
+main2.o:main2.c
+	gcc main2.c -c
+clean:
+	rm -f *.o

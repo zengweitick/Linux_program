@@ -1,0 +1,11 @@
+CC=gcc
+objs= main.o fun1.o my.h
+CFLAGS=-Wall -O -g
+main2:$(objs)
+	$(CC) $(objs)  -o main2
+%.o:%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+%.o:%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+clean:
+	rm -f *.o

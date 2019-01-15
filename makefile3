@@ -1,0 +1,9 @@
+2_3:2_3.o y_or_n_ques.o
+	gcc 2_3.o y_or_n_ques.o -o 2_3
+2_3.o:2_3.c
+	gcc 2_3.c -c
+y_or_n_ques.o:y_or_n_ques.c
+	gcc y_or_n_ques.c -c
+clean:
+	rm -f *.o
+

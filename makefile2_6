@@ -1,0 +1,6 @@
+2_6:2_6.o 
+	gcc 2_6.o -o 2_6
+2_6.o:2_6.c
+	gcc 2_6.c -c -Wall
+clean:
+	rm -f *.o
